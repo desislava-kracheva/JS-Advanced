@@ -7,4 +7,4 @@ ref.textContent = result;
 
     }
 
-
+    edit ('el1', 'DOM', 'Document object model')
