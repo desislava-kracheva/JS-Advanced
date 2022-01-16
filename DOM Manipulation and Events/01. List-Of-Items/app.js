@@ -7,6 +7,4 @@ function addItem() {
     items.appendChild(liElement);
     newItemText = '';
 
-
-
 }
