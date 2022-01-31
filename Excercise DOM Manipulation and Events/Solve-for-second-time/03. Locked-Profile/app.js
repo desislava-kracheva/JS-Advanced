@@ -1,15 +1,22 @@
 function lockedProfile() {
-    let main = document.getElementById('main');
-    main.addEventListener('click', onclick);
-    function onclick(e){
-if(e.target.tagName !== 'BUTTON'){
-return
+    let buttons = Array.from(document.querySelectorAll('#main .profile button'));
 
-} else {
+    buttons.forEach(el => {
+        el.addEventListener('click', onClick);
+    })
 
-    let isHidden = 
-}
+    function onClick(e){
+
+let button = e.target;
+let profile = button.parentElement;
+let radioButton =  profile.querySelector('input:checked');
+if(radioButton.value == 'unlock'){
+
+    let hiddenFieldElement = button.previousElementSibling;
+    hiddenFieldElement.style.display = hiddenFieldElement.style.display === 'block' ? 'none' : 'block';
+    button.textContent = button.textContent === 'Show more' ? 'Hide it': 'Show more'
+ } 
+
 
     }
-    
 }
