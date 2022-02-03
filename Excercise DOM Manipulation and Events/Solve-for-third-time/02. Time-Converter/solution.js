@@ -56,7 +56,7 @@ minutesBtn.addEventListener('click' , function(e){
         let seconds = Number(secondsInput.value);
         let minutes = seconds/60
         let hours = minutes/60;
-        let days = hours *24;
+        let days = hours /24;
 
         
         minutesInput.value = minutes
