@@ -19,11 +19,11 @@ describe('check isOddOrEven', () => {
     })
     it('is even', () => {
 
-        assert.equal(isOddOrEven ('aa'), 'Even','Message a===a')
+        assert.equal(isOddOrEven ('aa'), 'even','Message a===a')
     });
     it('is odd', () => {
 
         assert.equal(isOddOrEven ('a'), 'odd','Message a===a')
     })
 
-})
+});
